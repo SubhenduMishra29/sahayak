@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <title>Xyou Fitness</title>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section" style="background-image: url('assets/images/hero-image.jpg');">
+        <div class="container text-center">
+            <h1>Transform Your Life</h1>
+            <p class="lead">"Your body can stand almost anything. It’s your mind that you have to convince."</p>
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginModal">Login</button>
+            <button class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#registerModal">Join Now</button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p>
+                At Xyou, we believe that fitness is not just about the body; it's about transforming your entire lifestyle. 
+                Our dedicated team is here to support you every step of the way, providing personalized plans that suit your needs.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+<section class="services-section">
+    <div class="container text-center">
+        <h2>Our Services</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6 service">
+                <img src="assets/images/nutrition.jpg" alt="Nutrition Plans" class="img-fluid">
+                <h3>Nutrition Plans</h3>
+                <p>Customized meal plans designed to help you reach your fitness goals.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <img src="assets/images/workouts.jpg" alt="Workout Programs" class="img-fluid">
+                <h3>Workout Programs</h3>
+                <p>Effective workout routines tailored to your fitness level.</p>
+            </div>
+            <div class="col-md-4 col-sm-6 service">
+                <img src="assets/images/coaching.jpg" alt="Personal Coaching" class="img-fluid">
+                <h3>Personal Coaching</h3>
+                <p>One-on-one coaching to keep you motivated and on track.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Photo Album Section -->
+    <section class="photo-album-section">
+        <div class="container text-center">
+            <h2>Photo Album</h2>
+            <p>Check out our latest moments and transformations!</p>
+            <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="assets/images/photo1.jpg" data-lightbox="album" data-title="Fitness Event 1">
+                            <img src="assets/images/photo1.jpg" alt="Fitness Event 1" class="d-block w-100">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="assets/images/photo2.jpg" data-lightbox="album" data-title="Fitness Event 2">
+                            <img src="assets/images/photo2.jpg" alt="Fitness Event 2" class="d-block w-100">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="assets/images/photo3.jpg" data-lightbox="album" data-title="Fitness Event 3">
+                            <img src="assets/images/photo3.jpg" alt="Fitness Event 3" class="d-block w-100">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="assets/images/photo4.jpg" data-lightbox="album" data-title="Fitness Event 4">
+                            <img src="assets/images/photo4.jpg" alt="Fitness Event 4" class="d-block w-100">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="assets/images/photo5.jpg" data-lightbox="album" data-title="Fitness Event 5">
+                            <img src="assets/images/photo5.jpg" alt="Fitness Event 5" class="d-block w-100">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="assets/images/photo6.jpg" data-lightbox="album" data-title="Fitness Event 6">
+                            <img src="assets/images/photo6.jpg" alt="Fitness Event 6" class="d-block w-100">
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section class="membership-section" id="membership">
+        <div class="container text-center">
+            <h2>Membership Plans</h2>
+            <p>Join our community and take the first step towards a healthier you.</p>
+            <a href="#" class="btn btn-success btn-lg">View Plans</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required class="form-control mb-2">
+                <input type="email" name="email" placeholder="Your Email" required class="form-control mb-2">
+                <textarea name="message" rows="5" placeholder="Your Message" required class="form-control mb-2"></textarea>
+                <button type="submit" class="btn btn-success">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 Xyou Fitness. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Join Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="registerName">Full Name</label>
+                            <input type="text" class="form-control" id="registerName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerEmail">Email address</label>
+                            <input type="email" class="form-control" id="registerEmail" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Join Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/lightbox.min.js"></script>
+</body>
+</html>

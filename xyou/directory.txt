@@ -1,0 +1,32 @@
+XyouFitness/
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css         # Custom CSS files
+│   ├── images/               # Images used on the site
+│   ├── js/
+│   │   └── main.js           # JavaScript file for AJAX and frontend interactions
+│
+├── config/
+│   └── db.php                # Database connection configuration
+│
+├── includes/
+│   ├── header.php            # Reusable header (includes Bootstrap links)
+│   ├── footer.php            # Reusable footer (includes scripts and closing tags)
+│
+├── public/
+│   ├── index.php             # Main entry point (Homepage with registration form)
+│   ├── login.php             # Login form page
+│   └── dashboard.php         # User dashboard after login
+│
+├── scripts/
+│   ├── register.php          # PHP script to handle user registration
+│   ├── login_process.php     # PHP script to handle user login
+│   └── logout.php            # PHP script to handle user logout
+│
+├── templates/
+│   ├── register_form.php     # Reusable registration form
+│   ├── login_form.php        # Reusable login form
+│   └── dashboard_content.php # Dashboard content for logged-in users
+│
+└── .htaccess                 # Apache configuration for URL rewriting (optional)
